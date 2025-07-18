@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/home/section/Section.astro';
+import Parts from '../components/home/parts/Parts.astro';
+
+const pageMeta = {
+  title: "HOME",
+  ogpType: "website"
+};
+---
+
+<Layout
+  title=""
+  pageName="home"
+  meta={pageMeta}
+>
+
+<Section />
+<Parts />
+
+</Layout>
+
+<style lang="scss" is:global>
+@use '../assets/scss/mediaquery' as mq;
+@use '../assets/scss/mixin' as mi;
+
+</style>
